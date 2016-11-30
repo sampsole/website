@@ -1,0 +1,132 @@
+/* import the Roboto font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic);
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: url('img/hero.jpg');
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  align-items: baseline;
+}
+
+header h1 {
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+header nav a {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+header nav a:hover {
+  color: lightblue;
+  border-color: lightblue;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.hero {
+  padding: 50px 0;
+  min-height: 200px;
+  background: lightgreen;
+}
+
+.hero.shop {
+  background-color: lightgreen;
+  background-image: url('img/cat.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+header .container {
+  display: flex;
+  align-items: baseline;
+}
+
+header .menu-button {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  
+  header .menu-button {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav.hide-on-mobile {
+    display: none;
+  }
+
+  header nav a {
+    display: block;
+    border-top: 1px solid #777;
+    margin: 0;
+    text-align: center;
+    padding: 8px 0 3px;
+  }
+
+  header .container {
+    flex-wrap: wrap;
+  }
+
+}
+
+.panel-links {
+  display: flex;
+  align-content: space-between;
+}
+
+.panel-links a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 20px;
+   margin-right: 20px;
+}
+
+.panel-links a:hover {
+  background-color: lightblue;
+}
+
+.panel-links a:last-of-type {
+  margin-right: 0;
+}

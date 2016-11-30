@@ -1,0 +1,58 @@
+/* import the Roboto font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+html {
+  font-family: 'Indie Flower', cursive;
+  background-color: silver;
+  background-image: url(http://tiny.cc/otter-pic);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 30px;
+}
+
+img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  box-shadow: 5px 5px 5px black;
+}
+
+.pageHeading {
+  color: steelblue;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+  margin-bottom: 0;
+}
+
+.tagline {
+  color: purple;
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+}
+
+p {
+  color: darkblue;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.pageContent {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
